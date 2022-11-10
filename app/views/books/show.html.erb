@@ -6,11 +6,11 @@
 <h5>Body</h5>
 <p><%= @book.body %></p>
 
-<p>
-  <a hreh="/edit" >Edit</a>
-</p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+
 
 <p>
-  <a hreh="/books">Back</a>
+  <a href="/books">Back</a>
 </p>
 
