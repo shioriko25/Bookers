@@ -1,0 +1,31 @@
+<h1>Books</h1>
+
+
+<% @books.each do |book| %>
+
+
+<h4>Title</h4>
+<span><%= book.title %></span>
+
+
+<h4>Body</h4>
+<span><%= book.body %></span>
+
+
+<p>
+  <a hreh="/show">Show</a>
+</p>
+
+<p>
+  <a hreh="/edit">Edit</a>
+</p>
+
+<p>
+  <a hreh="/books">Destroy</a>
+</p>
+
+
+
+<% end %>
+
+
