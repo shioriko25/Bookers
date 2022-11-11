@@ -12,22 +12,13 @@
 <span><%= book.body %></span>
 
 
-<%= link_to "Show" , book_path(@book.id) %>
+<%= link_to "Show" , book_path(book.id) %>
+
+<%= link_to "Edit" , edit_book_path(book.id) %>
+
+<%= link_to "Destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure？" %>
 
 
-
-
-<p>
-  <a href="/show">Show</a>
-</p>
-
-<p>
-  <a href="/edit">Edit</a>
-</p>
-
-<p>
-  <a href="/books">Destroy</a>
-</p>
 
 
 
